@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+
+var NÚMERO_DE_CUENTA, NOMBRE_DEL_CLIENTE, SALDO_ACTUAL, SUMA=0;
+
+NÚMERO_DE_CUENTA=prompt("Ingrese el número de cuenta");
+NÚMERO_DE_CUENTA=parseInt(NÚMERO_DE_CUENTA);
+NOMBRE_DEL_CLIENTE=prompt("Ingrese el nombre del cliente");
+SALDO_ACTUAL=prompt("Ingrese el saldo actual");
+SALDO_ACTUAL=parseFloat(SALDO_ACTUAL);
+
+while(NÚMERO_DE_CUENTA>0)
+{
+	
+	if(SALDO_ACTUAL>0)
+	{
+		
+		SUMA=SUMA+SALDO_ACTUAL;
+		
+	}
+	
+	NÚMERO_DE_CUENTA=prompt("Ingrese el número de cuenta");
+	NÚMERO_DE_CUENTA=parseInt(NÚMERO_DE_CUENTA);
+	NOMBRE_DEL_CLIENTE=prompt("Ingrese el nombre del cliente");
+	SALDO_ACTUAL=prompt("Ingrese el saldo actual");
+	SALDO_ACTUAL=parseFloat(SALDO_ACTUAL);
+	
+}
+
+document.write("La suma total de los saldos acreedores es: ", SUMA);
+
+</script>
+</body>
+</html>

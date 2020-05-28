@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var edad, suma=0, contador=0, promedio=0;
+
+edad = prompt("Ingresar una edad.");
+edad = parseInt(edad);
+
+while(edad > 0)
+{
+	suma = suma + edad;
+	
+	contador++;
+	
+	edad = prompt("Ingresar una edad.");
+	edad = parseInt(edad);
+}
+
+promedio = suma / contador;
+
+document.write("La edad promedio es de: ", promedio, " años");
+
+</script>
+</body>
+</html>

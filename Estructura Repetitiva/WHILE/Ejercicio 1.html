@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var TEMPERATURA, SUMA=0, PROMEDIO=0, CONTADOR1=0, CONTADOR2=0;
+
+TEMPERATURA=prompt("Ingrese una temperatura");
+TEMPERATURA=parseFloat(TEMPERATURA);
+
+while(TEMPERATURA<100)
+{
+	
+	if(TEMPERATURA!=0)
+	{
+	
+	SUMA=SUMA+TEMPERATURA;
+	
+	CONTADOR1++;
+	
+	}
+	if(TEMPERATURA==0)
+	{
+		
+		CONTADOR2++;
+		
+	}
+	
+	TEMPERATURA=prompt("Ingrese una temperatura");
+	TEMPERATURA=parseFloat(TEMPERATURA);
+	
+}
+
+PROMEDIO=SUMA/CONTADOR1;
+
+document.write("<br> La temperatura promedio es: ", PROMEDIO);
+document.write("<br> La cantidad de temperaturas iguales a cero es: ", CONTADOR2);
+
+</script>
+</body>
+</html>

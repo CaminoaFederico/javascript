@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var preguntas, respuestas, porcentaje=0;
+
+preguntas = prompt("Ingrese una cantidad de preguntas.");
+preguntas = parseInt(preguntas);
+
+respuestas = prompt("Ingrese una cantidad de respuestas correctas.");
+respuestas = parseInt(respuestas);
+
+porcentaje = (respuestas * 100) / preguntas;
+
+if(porcentaje >= 90)
+{
+	document.write("Nivel superior.");
+}
+
+else
+{ 
+	if(porcentaje < 90 && porcentaje >= 75)
+	{
+		document.write("Nivel mayor.");
+	}
+
+	else
+	{ 
+		if(porcentaje < 75 && porcentaje >= 50)
+		{
+			document.write("Nivel regular.");
+		}
+
+		else 
+		{
+			document.write("Fuera de nivel.");
+		}
+	}
+}
+
+</script>
+</body>
+</html>

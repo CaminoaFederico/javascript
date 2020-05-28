@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var NOTA1, NOTA2, NOTA3, PROMEDIO=0;
+
+NOTA1=prompt("Ingrese la primera nota");
+NOTA1=parseInt(NOTA1);
+NOTA2=prompt("Ingrese la segunda nota");
+NOTA2=parseInt(NOTA2);
+NOTA3=prompt("Ingrese la tercera nota");
+NOTA3=parseInt(NOTA3);
+
+PROMEDIO=(NOTA1+NOTA2+NOTA3)/3;
+
+if(PROMEDIO>=7)
+{
+	document.write("Aprobado");
+	alert("Aprobado");
+}
+else
+{
+	document.write("Desaprobado");
+	alert("Desaprobado");
+}
+
+</script>
+</body>
+</html>

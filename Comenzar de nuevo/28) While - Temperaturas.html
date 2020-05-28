@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var temperatura, promedio=0, suma=0, contador1=0, contador2=0;
+
+temperatura = prompt("Ingresar una temperatura.");
+temperatura = parseInt(temperatura);
+
+while(temperatura < 100)
+{
+	contador1++;
+	
+	suma = suma + temperatura;
+	
+	if(temperatura == 0)
+	{
+		//suma = suma + temperatura;
+		//contador1++;
+		contador2++;
+	}
+	
+	temperatura = prompt("Ingresar una temperatura.");
+	temperatura = parseInt(temperatura);
+}
+
+promedio = suma / contador1;
+
+document.write("El promedio general de la temperatura es de: ", promedio, "°C");
+document.write("<br> La cantidad de temperaturas iguales a cero es de: ", contador2);
+
+</script>
+</body>
+</html>

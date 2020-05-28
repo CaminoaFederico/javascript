@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var NÚMERO, CONTADOR1=0, CONTADOR2=0, CONTADOR3=0;
+
+NÚMERO=prompt("Ingrese un número");
+NÚMERO=parseInt(NÚMERO);
+
+while(NÚMERO<999)
+{
+	
+	if(NÚMERO>0)
+	{
+		
+		CONTADOR1++;
+		
+	}
+	else
+	{
+		
+		if(NÚMERO<0)
+		{
+		
+			CONTADOR2++;
+		
+		}
+		else
+		{
+			
+			CONTADOR3++;
+			
+		}
+		
+	}
+		
+NÚMERO=prompt("Ingrese un número");
+NÚMERO=parseInt(NÚMERO);
+
+}
+
+document.write("<br> La cantidad de números positivos es: ", CONTADOR1);
+document.write("<br> La cantidad de números negativos es: ", CONTADOR2);
+document.write("<br> La cantidad de números iguales a cero es: ", CONTADOR3);
+
+</script>
+</body>
+</html>

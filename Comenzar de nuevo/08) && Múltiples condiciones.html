@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var edad;
+
+edad = prompt("Ingrese su edad.");
+edad = parseInt(edad);
+
+if(edad < 20 && edad >= 0)
+{
+	document.write("Usted pertenece a la categoría de Joven.");
+}
+
+else if(edad < 40 && edad >= 20)
+{
+	document.write("Usted pertenece a la categoría de Adulto.");
+}
+
+else if(edad < 60 && edad >= 40)
+{
+	document.write("Usted pertenece a la categoría de Mayor.");
+}
+
+else if(edad >= 60 && edad <= 120)
+{
+	document.write("Usted pertenece a la categoría de Tercera Edad.");
+}
+
+else if(edad > 120 || edad < 0)
+{
+	document.write("Ingrese una edad adecuada.");
+}
+
+</script>
+</body>
+</html>

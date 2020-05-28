@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var EDAD, TURNO, CONTADOR1=0, CONTADOR2=0, CONTADOR3=0;
+
+EDAD=prompt("Ingrese la edad del alumno");
+EDAD=parseInt(EDAD);
+TURNO=prompt("Ingrese el turno del alumno");
+
+while(EDAD>=0)
+{
+	
+	if(TURNO=="mañana")
+	{
+		
+		CONTADOR1++;
+		
+	}
+	if(TURNO=="tarde")
+	{
+		
+		CONTADOR2++;
+		
+	}
+	if(TURNO=="noche")
+	{
+		
+		CONTADOR3++;
+		
+	}
+	
+	EDAD=prompt("Ingrese la edad del alumno");
+	EDAD=parseInt(EDAD);
+	TURNO=prompt("Ingrese el turno del alumno");
+	
+}
+
+document.write("<br> La cantidad de alumnos del turno mañana es: ", CONTADOR1);
+document.write("<br> La cantidad de alumnos del turno tarde es: ", CONTADOR2);
+document.write("<br> La cantidad de alumnos del turno noche es: ", CONTADOR3);
+
+</script>
+</body>
+</html>

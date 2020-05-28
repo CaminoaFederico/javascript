@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var numero1, numero2, suma=0, resta=0, multi=0, div=0;
+
+numero1 = prompt("Ingrese el primer número.");
+numero1 = parseInt(numero1);
+
+numero2 = prompt("Ingrese el segundo número.");
+numero2 = parseInt(numero2);
+
+suma = numero1 + numero2;
+resta = numero1 - numero2;
+multi = numero1 * numero2;
+div = numero1 / numero2;
+
+if(numero1 > numero2)
+{
+	alert("El primer número es mayor que el segundo.");
+	document.write("La suma es: ", suma, "<br>");
+	document.write("La resta es: ", resta);
+}
+
+else
+{
+	alert("El segundo número es mayor que el primero.");
+	document.write("La multiplicación es: ", multi, "<br>");
+	document.write("La división es: ", div);
+}
+
+</script>
+</body>
+</html>

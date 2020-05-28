@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var CUOTA_SOCIAL, NÚMERO_DE_SOCIO, PORCENTAJE1=0, PORCENTAJE2=0, SUMA1=0, SUMA2=0, PROMEDIO=0, CONTADOR1=0, CONTADOR2=0, CONTADOR3=0, CONTADOR4=0;
+
+CUOTA_SOCIAL=prompt("Ingrese una cuota social");
+CUOTA_SOCIAL=parseInt(CUOTA_SOCIAL);
+NÚMERO_DE_SOCIO=prompt("Ingrese un número de socio");
+NÚMERO_DE_SOCIO=parseInt(NÚMERO_DE_SOCIO);
+
+while(NÚMERO_DE_SOCIO!=0)
+{
+	
+	if(NÚMERO_DE_SOCIO>500)
+	{
+		
+		CONTADOR1++;
+		
+	}
+	else
+	{
+		
+		if(CUOTA_SOCIAL<100 || NÚMERO_DE_SOCIO<300)
+		{
+			
+			CONTADOR2++;
+			
+		}
+		else
+		{
+			
+			if(CUOTA_SOCIAL>150 && CUOTA_SOCIAL<200)
+			{
+				
+				CONTADOR3++
+				
+			}
+			else
+			{
+				
+				if(NÚMERO_DE_SOCIO<50)
+				{
+					
+					SUMA1=SUMA1+CUOTA_SOCIAL;
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	SUMA2=SUMA2+CUOTA_SOCIAL;
+	
+	CONTADOR4++;
+	
+	CUOTA_SOCIAL=prompt("Ingrese una cuota social");
+	CUOTA_SOCIAL=parseInt(CUOTA_SOCIAL);
+	NÚMERO_DE_SOCIO=prompt("Ingrese un número de socio");
+	NÚMERO_DE_SOCIO=parseInt(NÚMERO_DE_SOCIO);
+	
+}
+
+PORCENTAJE1=(CONTADOR1*100)/CONTADOR4;
+PORCENTAJE2=(CONTADOR3*100)/CONTADOR4;
+PROMEDIO=SUMA2/CONTADOR4;
+
+document.write("<br> El porcentaje de socios cuyo número de socio es mayor a 500 es: ", PORCENTAJE1);
+document.write("<br> El porcentaje de socios cuya cuota social está entre $150 y $200 es: ", PORCENTAJE2);
+document.write("<br> El promedio de las cuotas sociales es: ", PROMEDIO);
+document.write("<br> La cantidad de socios que pagan menos de $100 o cuyo número es menor a 300 es: ", CONTADOR2);
+document.write("<br> El monto recaudado por lo aportado por los socios cuyo número es menor a 50 es: ", SUMA1);
+
+</script>
+</body>
+</html>

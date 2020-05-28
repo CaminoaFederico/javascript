@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var SEXO, EDAD, SUMA1=0, SUMA2=0, PROMEDIO1=0, PROMEDIO2=0, CONTADOR1=0, CONTADOR2=0;
+
+for(I=1;I<=15;I++)
+{
+	
+	SEXO=prompt("Ingrese el sexo de una persona");
+	EDAD=prompt("Ingrese la edad de una persona");
+	EDAD=parseInt(EDAD);
+	
+	if(SEXO=="masculino")
+	{
+		
+		SUMA1=SUMA1+EDAD;
+		
+		CONTADOR1++;
+		
+	}
+	if(SEXO=="femenino")
+	{
+		
+		SUMA2=SUMA2+EDAD;
+		
+		CONTADOR2++;
+		
+	}
+	
+}
+
+PROMEDIO1=SUMA1/CONTADOR1;
+PROMEDIO2=SUMA2/CONTADOR2;
+
+document.write("<br> El promedio de edad del sexo masculino es: ", PROMEDIO1);
+document.write("<br> El promedio de edad del sexo femenino es: ", PROMEDIO2);
+
+if(CONTADOR1>CONTADOR2)
+{
+	
+	document.write("<br> El sexo de mayor cantidad de personas es: Masculino");
+	
+}
+else
+{
+	
+	document.write("<br> El sexo con mayor cantidad de personas es: Femenino");
+	
+}
+
+</script>
+</body>
+</html>

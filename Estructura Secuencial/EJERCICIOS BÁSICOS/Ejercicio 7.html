@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var CANT_DE_HORAS, VALOR_POR_HORA, PARCIAL_1=0, PARCIAL_2=0, PARCIAL_3=0, SUELDO_A_COBRAR=0;
+
+CANT_DE_HORAS=prompt("Ingrese una cantidad de horas");
+CANT_DE_HORAS=parseInt(CANT_DE_HORAS);
+VALOR_POR_HORA=prompt("Ingrese el valor de la hora");
+VALOR_POR_HORA=parseInt(VALOR_POR_HORA);
+
+PARCIAL_1=[(CANT_DE_HORAS*VALOR_POR_HORA)*11]/100;
+PARCIAL_2=[(CANT_DE_HORAS*VALOR_POR_HORA)*3]/100;
+PARCIAL_3=[(CANT_DE_HORAS*VALOR_POR_HORA)*2]/100;
+SUELDO_A_COBRAR=(CANT_DE_HORAS*VALOR_POR_HORA)-(PARCIAL_1+PARCIAL_2+PARCIAL_3)
+
+document.write(" El parcial 1 es ", PARCIAL_1);
+alert(" El parcial 1 es "+ PARCIAL_1);
+document.write(" El parcial 2 es ", PARCIAL_2);
+alert(" El parcial 2 es "+ PARCIAL_2);
+document.write(" El parcial 3 es ", PARCIAL_3) ;
+alert(" El parcial 3 es "+ PARCIAL_3);
+document.write(" El sueldo a cobrar es ", SUELDO_A_COBRAR);
+alert(" El sueldo a cobrar es "+ SUELDO_A_COBRAR);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var SUELDO, SUMA=0, PROMEDIO=0, CONTADOR1=0, CONTADOR2=0;
+
+for(I=1;I<=10;I++)
+{
+	
+	SUELDO=prompt("Ingrese un sueldo");
+	SUELDO=parseInt(SUELDO);
+	
+	SUMA=SUMA+SUELDO;
+	
+	CONTADOR1++;
+	
+	if(SUELDO>2500)
+	{
+		
+		CONTADOR2++;
+		
+	}
+	
+}
+
+PROMEDIO=SUMA/CONTADOR1;
+
+document.write("<br> El promedio de los sueldos es: ", PROMEDIO);
+document.write("<br> La cantidad de sueldos superiores a $2500 es: ", CONTADOR2);
+
+</script>
+</body>
+</html>

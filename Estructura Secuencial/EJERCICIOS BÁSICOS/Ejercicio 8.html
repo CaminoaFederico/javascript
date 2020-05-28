@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var CANT_DE_PREGUNTAS, CANT_DE_RESPUESTAS_CORRECTAS, PORCENTAJE=0;
+
+CANT_DE_PREGUNTAS=prompt("Ingrese una cantidad de preguntas:");
+CANT_DE_PREGUNTAS=parseInt(CANT_DE_PREGUNTAS);
+CANT_DE_RESPUESTAS_CORRECTAS=prompt("Ingrese una cantidad de respuestas correctas:");
+CANT_DE_RESPUESTAS_CORRECTAS=parseInt(CANT_DE_RESPUESTAS_CORRECTAS);
+
+PORCENTAJE=(CANT_DE_RESPUESTAS_CORRECTAS*100)/CANT_DE_PREGUNTAS
+
+if(PORCENTAJE>=90)
+{
+	document.write("Nivel superior");
+	 alert("Nivel superior");
+}
+else
+{
+	if(PORCENTAJE>=75 && PORCENTAJE<90)
+	{
+		document.write("Nivel intermedio");
+		alert("Nivel intermedio");
+	}
+	else
+	{
+		if(PORCENTAJE>=50 && PORCENTAJE<75)
+		{
+			document.write("Nivel regular");
+			alert("Nivel regular");
+		}
+		else
+		{
+			document.write("Fuera de nivel");
+			alert("Fuera de nivel");
+		}
+	}
+}
+
+</script>
+</body>
+</html>

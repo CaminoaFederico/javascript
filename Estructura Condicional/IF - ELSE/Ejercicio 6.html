@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var EDAD;
+
+EDAD=prompt("Ingrese su edad");
+EDAD=parseInt(EDAD);
+
+if(EDAD<20)
+{
+	document.write("Pertenece a la categoría 'Joven'")
+	alert("Pertenece a la categoría 'Joven'")
+}
+else
+{
+	if(EDAD>=20 && EDAD<40)
+	{
+		document.write("Pertence a la categoría 'Adulto'")
+		alert("Pertenece a la categoría 'Adulto'")
+	}
+	else
+	{
+		if(EDAD>= 40 && EDAD<60)
+		{
+			document.write("Pertenece a la categoría 'Mayor'")
+			alert("Pertenece a la categoría 'Mayor'")
+		}
+		else
+		{
+			document.write("Pertenece a la categoría 'Tercera edad'")
+			alert("Pertenece a la categoría 'Tercera edad'")
+		}
+	}
+}
+
+</script>
+</body>
+</html>

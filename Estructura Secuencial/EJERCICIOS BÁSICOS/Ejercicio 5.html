@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var INGRESO_TOTAL, PARCIAL_1=0, PARCIAL_2=0, PARCIAL_3=0, TOTAL_A_PAGAR=0, INGRESO_NETO=0;
+
+INGRESO_TOTAL=prompt("Ingrese un número");
+INGRESO_TOTAL=parseInt(INGRESO_TOTAL);
+
+PARCIAL_1=(INGRESO_TOTAL*5)/100;
+PARCIAL_2=(INGRESO_TOTAL*2)/100;
+PARCIAL_3=(INGRESO_TOTAL*0.3)/100;
+TOTAL_A_PAGAR=(PARCIAL_1+PARCIAL_2+PARCIAL_3);
+INGRESO_NETO=(INGRESO_TOTAL-TOTAL_A_PAGAR);
+
+document.write(" El parcial 1 es ", PARCIAL_1);
+alert(" El parcial 1 es "+ PARCIAL_1);
+document.write(" El parcial 2 es ", PARCIAL_2);
+alert(" El parcial 2 es "+ PARCIAL_2);
+document.write(" El parcial 3 es ", PARCIAL_3);
+alert(" El parcial 3 es "+ PARCIAL_3);
+document.write(" El total a pagar es ", TOTAL_A_PAGAR);
+alert(" El total a pagar es "+ TOTAL_A_PAGAR);
+document.write(" El ingreso neto es ", INGRESO_NETO);
+alert(" El ingreso neto es "+ INGRESO_NETO);
+
+</script>
+</body>
+</html>

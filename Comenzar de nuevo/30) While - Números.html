@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+
+<body>
+<script language="javascript">
+
+var numero, contador1=0, contador2=0, contador3=0;
+
+numero = prompt("Ingresar un número entero.");
+numero = parseInt(numero);
+
+while(numero < 999)
+{
+	if(numero > 0)
+	{
+		contador1++;
+	}
+	
+	else 
+	{
+		if(numero < 0)
+		{
+			contador2++;
+		}
+	
+		else
+		{
+			contador3++;
+		}
+	}
+	
+	numero = prompt("Ingresar un número entero.");
+	numero = parseInt(numero);
+}
+
+document.write("La cantidad de números mayores a cero es de: ", contador1);
+document.write("<br> La cantidad de números menores a cero es de: ", contador2);
+document.write("<br> La cantidad de números iguales a cero es de: ", contador3);
+
+</script>
+</body>
+</html>
